@@ -19,6 +19,10 @@
             <directory>deploy/logs</directory>
             <outputDirectory>logs</outputDirectory>
         </fileSet>
+        <fileSet>
+            <directory>deploy/db</directory>
+            <outputDirectory>db</outputDirectory>
+        </fileSet>
 
     </fileSets>
     <dependencySets>  
