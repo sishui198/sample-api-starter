@@ -8,7 +8,7 @@
    
  ![](deploy/file/coder.jpg)
        
- ##项目开发环境
+ ##项目开发环境启动
  * 还原数据库【数据库备份脚本在deploy/db目录】
  * 在配置文件：application-dev.yml中修改数据库配置
  * 直接启动com.weng.framework.SampleApiStarterApplication类即可。
