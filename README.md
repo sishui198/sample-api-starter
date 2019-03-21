@@ -1,5 +1,5 @@
 ##项目说明
-* 项目整合了SpringBoot、Mybatis、Mybatis-lus、Swagger-ui、Druid、lombok等常用
+* 项目整合了SpringBoot、Mybatis、Mybatis-lus、Swagger-ui、Druid、lombok、validator等常用
   框架提供后端开发脚手架。
 * 基于该脚本手架，提供`在线` `生成代码`功能。【通过SQL一建生成增删改查代码】 
    *  代码在线生成访问地址：http://www.handbyhand.club/coder  用户名/密码：api-starter/api-starter
