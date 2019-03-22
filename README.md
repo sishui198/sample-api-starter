@@ -9,11 +9,27 @@
  ![](deploy/file/coder.jpg)
        
  ##项目开发环境启动
+ * 修改本地maven配置文件settings.xml。把mirror中的mirrorOf属性改为：<mirrorOf>*,!my-maven-repo</mirrorOf>
+   例如：
+   ```xml
+       		<mirror>
+       			<id>aliyun</id>
+       			<mirrorOf>*,!my-maven-repo</mirrorOf>
+       			<name>sonatype</name>
+       			   <url>https://maven.aliyun.com/repository/jcenter</url>  
+       		</mirror>
+    ``` 
+    因为
+    ```xml
+    <mirrorOf>*</mirrorOf>
+    ``` 
+    会覆盖掉所有的repository,导致项目中的repository不生效,所以需要以上配置
  * 还原数据库【数据库备份脚本在deploy/db目录】
  * 在配置文件：application-dev.yml中修改数据库配置
  * 直接启动com.weng.framework.SampleApiStarterApplication类即可。
  * 访问swagger-ui地址：http://127.0.0.1:8000/swagger-ui.html
  * 访问druid地址： http://127.0.0.1:8000/druid   admin/admin
+
    
 
 ##项目打包部署
@@ -25,3 +41,7 @@
     * conf 配置文件的位置
     * lib 依赖的jar
 * 把zip部署上传到linux服务器，然后到bin目录下执行./start.sh即可
+
+
+##常见问题
+*  jar依赖
