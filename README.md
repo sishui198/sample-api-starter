@@ -9,6 +9,7 @@
  ![](deploy/file/coder.jpg)
        
  ##项目开发环境启动
+ 
  * 修改本地maven配置文件settings.xml。把mirror中的mirrorOf属性改为：<mirrorOf>*,!my-maven-repo</mirrorOf>
    例如：
    ```xml
