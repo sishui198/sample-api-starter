@@ -70,43 +70,7 @@ public class User extends BaseEntity<User> {
 	@TableField(value="id_card")
 	private String idCard;
 	
-	/**
-     * 微信号
-     */
-	@TableField(value="wechat")
-	private String wechat;
-	
-	/**
-     * 微信opengid
-     */
-	@TableField(value="openid")
-	private String openid;
-	
-	/**
-     * 默认密码
-     */
-	@TableField(value="defualt_pwd")
-	private String defualtPwd;
-	
-	/**
-     * 密码修改时间
-     */
-	@TableField(value="pwd_changed_dt")
-	private Date pwdChangedDt;
-	
-	/**
-     * 用户状态(0-有效、1失效)
-     */
-	@TableField(value="user_status")
-	private String userStatus;
-	
-	/**
-     * 
-     */
-	@TableField(value="sync_status")
-	private String syncStatus;
-	
-	
+
     @Override
     protected Serializable pkVal() {
         return null;
