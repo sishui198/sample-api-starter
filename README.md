@@ -51,7 +51,8 @@
     * idea中安装：打开IDEA的Setting –> 选择Plugins选项 –> 选择Browse repositories –> 搜索lombok –> 点击安装 –> 安装完成重启IDEA –> 安装成功
     * eclipse安装，先到官网下载lombok.jar，官网地址：https://projectlombok.org/download，
         将lombok.jar包拷贝到eclipse的安装目录下，并且在eclipse.ini文件中添加如下两行
-        ```xml
+        ```properties
     -Xbootclasspath/a:lombok.jar    --备注：如果没有这一行也是没问题的
+    
     -javaagent:lombok.jar
     ```
