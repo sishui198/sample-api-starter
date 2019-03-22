@@ -44,3 +44,13 @@
 
 
 ##常见问题
+* 没安装lombok插件，导致部分代码显示报错（不影响正常运行）。
+
+    * lombok插件可以在我们简化很多代码，安插也非常方便
+    * idea中安装：打开IDEA的Setting –> 选择Plugins选项 –> 选择Browse repositories –> 搜索lombok –> 点击安装 –> 安装完成重启IDEA –> 安装成功
+    * eclipse安装，先到官网下载lombok.jar，官网地址：https://projectlombok.org/download，
+        将lombok.jar包拷贝到eclipse的安装目录下，并且在eclipse.ini文件中添加如下两行
+        ```xml
+    -Xbootclasspath/a:lombok.jar    --备注：如果没有这一行也是没问题的
+    -javaagent:lombok.jar
+    ```
