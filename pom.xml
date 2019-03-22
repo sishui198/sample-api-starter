@@ -117,7 +117,7 @@
 
     <repositories>
         <repository>
-            <id>my-maven-repo</id>
+            <id>framework-repo</id>
             <url>https://raw.githubusercontent.com/wengsongwei8/maven-repo/master</url>
         </repository>
     </repositories>

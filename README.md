@@ -14,7 +14,7 @@
    ```xml
        		<mirror>
        			<id>aliyun</id>
-       			<mirrorOf>*,!my-maven-repo</mirrorOf>
+       			<mirrorOf>*,!framework-repo</mirrorOf>
        			<name>sonatype</name>
        			   <url>https://maven.aliyun.com/repository/jcenter</url>  
        		</mirror>
@@ -44,4 +44,3 @@
 
 
 ##常见问题
-*  jar依赖
