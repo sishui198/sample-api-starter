@@ -57,36 +57,6 @@ public class UserReq extends BaseEntity<UserReq> {
      */
 	private String idCard;
     
-	/**
-     * 微信号
-     */
-	private String wechat;
-    
-	/**
-     * 微信opengid
-     */
-	private String openid;
-    
-	/**
-     * 默认密码
-     */
-	private String defualtPwd;
-    
-	/**
-     * 密码修改时间
-     */
-	private Date pwdChangedDt;
-    
-	/**
-     * 用户状态(0-有效、1失效)
-     */
-	private String userStatus;
-    
-	/**
-     * 
-     */
-	private String syncStatus;
-    
 
 
 
