@@ -1,4 +1,4 @@
-##项目说明
+## 项目说明
 * 项目整合了SpringBoot、Mybatis、Mybatis-lus、Swagger-ui、Druid、lombok、validator等常用
   框架提供后端开发脚手架。
 * 基于该脚本手架，提供`在线` `生成代码`功能。【通过SQL一建生成增删改查代码】 
@@ -8,7 +8,7 @@
    
  ![](deploy/file/coder.jpg)
        
- ##项目开发环境启动
+ ## 项目开发环境启动
  
  * 修改本地maven配置文件settings.xml。把mirror中的mirrorOf属性改为：<mirrorOf>*,!my-maven-repo</mirrorOf>
    例如：
@@ -33,7 +33,7 @@
 
    
 
-##项目打包部署
+## 项目打包部署
 * 打包命令：mvn clean assembly:assembly -Pdev 其中dev指的是开发环境 
 * 执行完打包命令以后，将生成一个.zip部署包
 * 目录结构如下
@@ -44,7 +44,7 @@
 * 把zip部署上传到linux服务器，然后到bin目录下执行./start.sh即可
 
 
-##常见问题
+## 常见问题
 * 没安装lombok插件，导致部分代码显示报错（不影响正常运行）。
 
     * lombok插件可以在我们简化很多代码，安插也非常方便
