@@ -19,13 +19,9 @@
 			   <url>https://raw.githubusercontent.com/wengsongwei8/maven-repo/master</url>  
 		</mirror>
 ```
- 如果有配置<mirrorOf>*</mirrorOf>，由改为：<mirrorOf>*,!framework-repo</mirrorOf>
+ 如果有配置```xml<mirrorOf>*</mirrorOf>```，由改为：<mirrorOf>*,!framework-repo</mirrorOf>
 
-    因为
-    ```xml
-    <mirrorOf>*</mirrorOf>
-    ``` 
-    会覆盖掉所有的repository,导致项目中的repository不生效,所以需要以上配置
+    因为<mirrorOf>*</mirrorOf>会覆盖掉所有的repository,导致项目中的repository不生效,所以需要以上配置
  * 还原数据库【数据库备份脚本在deploy/db目录】
  * 在配置文件：application-dev.yml中修改数据库配置
  * 直接启动com.weng.framework.SampleApiStarterApplication类即可。
