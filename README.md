@@ -10,13 +10,13 @@
        
  ## 项目开发环境启动
  
- * 修改本地maven配置文件settings.xml。把mirror中的mirrorOf属性改为：<mirrorOf>*,!my-maven-repo</mirrorOf>
+ * 修改本地maven配置文件settings.xml。把mirror中的mirrorOf属性改为：<mirrorOf>*,!framework-repo</mirrorOf>
    例如：
    ```xml
        		<mirror>
        			<id>aliyun</id>
        			<mirrorOf>*,!framework-repo</mirrorOf>
-       			<name>sonatype</name>
+       			<name>aliyun</name>
        			   <url>https://maven.aliyun.com/repository/jcenter</url>  
        		</mirror>
     ``` 
