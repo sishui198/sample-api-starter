@@ -10,16 +10,17 @@
        
  ## 项目开发环境启动
  
- * 修改本地maven配置文件settings.xml。把mirror中的mirrorOf属性改为：<mirrorOf>*,!framework-repo</mirrorOf>
-   例如：
-   ```xml
-       		<mirror>
-       			<id>aliyun</id>
-       			<mirrorOf>*,!framework-repo</mirrorOf>
-       			<name>aliyun</name>
-       			   <url>https://maven.aliyun.com/repository/jcenter</url>  
-       		</mirror>
-    ``` 
+ * 修改本地maven配置文件settings.xml中增加包依赖配置
+ ```xml
+    <mirror>
+			<id>framework-repo</id>
+			<mirrorOf>framework-repo</mirrorOf>
+			<name>framework-repo</name>
+			   <url>https://raw.githubusercontent.com/wengsongwei8/maven-repo/master</url>  
+		</mirror>
+```
+ 如果有配置<mirrorOf>*</mirrorOf>，由改为：<mirrorOf>*,!framework-repo</mirrorOf>
+
     因为
     ```xml
     <mirrorOf>*</mirrorOf>
