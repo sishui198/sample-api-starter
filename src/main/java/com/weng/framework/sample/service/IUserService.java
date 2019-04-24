@@ -4,8 +4,8 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.weng.framework.common.exception.GlobalServiceException;
 import com.weng.framework.common.model.vo.PageRequestVO;
+import com.weng.framework.core.model.ResponseData;
 import com.weng.framework.sample.entity.User;
-import com.weng.framework.web.model.response.ResponseData;
 
 
 /**

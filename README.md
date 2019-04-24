@@ -10,21 +10,17 @@
        
  ## 项目开发环境启动
  
- * 修改本地maven配置文件settings.xml。把mirror中的mirrorOf属性改为：<mirrorOf>*,!my-maven-repo</mirrorOf>
-   例如：
-   ```xml
-       		<mirror>
-       			<id>aliyun</id>
-       			<mirrorOf>*,!framework-repo</mirrorOf>
-       			<name>sonatype</name>
-       			   <url>https://maven.aliyun.com/repository/jcenter</url>  
-       		</mirror>
-    ``` 
-    因为
-    ```xml
-    <mirrorOf>*</mirrorOf>
-    ``` 
-    会覆盖掉所有的repository,导致项目中的repository不生效,所以需要以上配置
+ * 修改本地maven配置文件settings.xml中增加包依赖配置
+ ```xml
+    <mirror>
+			<id>framework-repo</id>
+			<mirrorOf>framework-repo</mirrorOf>
+			<name>framework-repo</name>
+			   <url>https://raw.githubusercontent.com/wengsongwei8/maven-repo/master</url>  
+		</mirror>
+```
+ 	如果有配置<mirrorOf>*</mirrorOf>，则改为：<mirrorOf>*,!framework-repo</mirrorOf>
+    因为<mirrorOf>*</mirrorOf>会覆盖掉所有的repository,导致项目中的repository不生效,所以需要以上配置
  * 还原数据库【数据库备份脚本在deploy/db目录】
  * 在配置文件：application-dev.yml中修改数据库配置
  * 直接启动com.weng.framework.SampleApiStarterApplication类即可。

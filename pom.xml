@@ -29,16 +29,10 @@
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <scope>provided</scope>
-        </dependency>
-
     </dependencies>
 
 
-
+<!--以下为打包构建配置-->
     <build>
         <plugins>
             <!-- 希望打jar时不包括配置文件放在jar里，需要放到jar以外的conf文件 -->
